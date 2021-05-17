@@ -77,4 +77,21 @@ module.exports = {
       cleanOnceBeforeBuildPatterns: ['main.js'],
     }),
   ],
+  externals: {
+    '@eva/eva.js': 'EVA',
+    '@eva/renderer-adapter': ['EVA', 'rendererAdapter'],
+    '@eva/plugin-renderer': ['EVA', 'plugin', 'renderer'],
+    '@eva/plugin-renderer-event': ['EVA', 'plugin', 'renderer', 'event'],
+    '@eva/plugin-renderer-graphics': ['EVA', 'plugin', 'renderer', 'graphics'],
+    '@eva/plugin-renderer-img': ['EVA', 'plugin', 'renderer', 'img'],
+    '@eva/plugin-renderer-render': ['EVA', 'plugin', 'renderer', 'render'],
+    '@eva/plugin-renderer-sprite-animation': [
+      'EVA',
+      'plugin',
+      'renderer',
+      'spriteAnimation',
+    ],
+    '@eva/plugin-renderer-text': ['EVA', 'plugin', 'renderer', 'text'],
+    '@eva/plugin-transition': ['EVA', 'plugin', 'transition'],
+  },
 };

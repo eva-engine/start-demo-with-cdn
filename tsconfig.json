@@ -21,7 +21,37 @@
     "noImplicitAny": true,
     "target": "es5",
     "allowJs": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@eva/eva.js": ["node_modules/@eva/eva.js/dist/eva.js.d.ts"],
+      "@eva/plugin-renderer": [
+        "node_modules/@eva/plugin-renderer/dist/plugin-renderer.d.ts"
+      ],
+      "@eva/plugin-renderer-event": [
+        "node_modules/@eva/plugin-renderer-event/dist/plugin-renderer-event.d.ts"
+      ],
+      "@eva/plugin-renderer-graphics": [
+        "node_modules/@eva/plugin-renderer-graphics/dist/plugin-renderer-graphics.d.ts"
+      ],
+      "@eva/plugin-renderer-img": [
+        "node_modules/@eva/plugin-renderer-img/dist/plugin-renderer-img.d.ts"
+      ],
+      "@eva/plugin-renderer-render": [
+        "node_modules/@eva/plugin-renderer-render/dist/plugin-renderer-render.d.ts"
+      ],
+      "@eva/plugin-renderer-sprite-animation": [
+        "node_modules/@eva/plugin-renderer-sprite-animation/dist/plugin-renderer-sprite-animation.d.ts"
+      ],
+      "@eva/plugin-renderer-text": [
+        "node_modules/@eva/plugin-renderer-text/dist/plugin-renderer-text.d.ts"
+      ],
+      "@eva/plugin-transition": [
+        "node_modules/@eva/plugin-transition/dist/plugin-transition.d.ts"
+      ],
+      "@eva/renderer-adapter": [
+        "node_modules/@eva/renderer-adapter/dist/renderer-adapter.d.ts"
+      ]
+    }
   },
   "include": ["./src/**/*.ts"]
 }
